@@ -1,6 +1,7 @@
 body {
     background: #b2b2b2;
     font-family: "Nunito", sans-serif;
+    font-weight: 100;
 
 }
 
@@ -10,7 +11,7 @@ body {
 
 #mainNavbar {
     font-size: 1.5rem;
-    font-weight: 100;    
+    font-weight: 100;
 }
 
 #mainNavbar .nav-link {
@@ -26,18 +27,26 @@ body {
     font-size: 1.5rem;
 }
 
+h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ae8670;
+}
+
 .navbar.scrolled {
     background: #d2b9ac;
     transition: background 500ms;
 }
 
-.row{
+.row {
     background-color: #ddccbe;
     margin: auto;
-    
+
 }
 
-.column{
+.column {
     width: 50%;
     display: flex;
     align-items: center;
@@ -48,9 +57,122 @@ body {
     
 } */
 
-
-.column img{
+.column img {
     width: 100%;
+    height: auto;
+}
+
+main {
+    margin: auto;
+}
+
+.trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    text-align: center;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item a {
+    position: absolute;
+    bottom: 10px;
+    /* Ajuste a posição vertical conforme necessário */
+    left: 0;
+    /* Coloque a tag "Saiba Mais" à esquerda da imagem */
+    right: 0;
+    /* Coloque a tag "Saiba Mais" à direita da imagem */
+    background: rgba(0, 0, 0, 0.5);
+    /* Cor de fundo para legibilidade */
+    color: white;
+    /* Cor do texto da tag */
+    padding: 5px;
+    /* Espaçamento interno para a tag */
+    text-align: center;
+    /* Centralize o texto horizontalmente */
+    text-decoration: none;
+    /* Remova sublinhado de links */
+
+}
+
+/* .social{
+    width: 50%;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.social header{
+    text-align: center;
+}
+
+.social ul{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+
+.social li{
+    margin: auto;
+    padding: auto;
+}
+
+.social a{
+    text-decoration: none;
+    color: black;
+} */
+
+.social{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.social h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ae8670;
+    margin-bottom: 10%;
+}
+
+.lista-icones{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-icones li{
+    margin: 5%;
+    padding: 1%;
+}
+
+.lista-icones i{
+    text-decoration: none;
+    color: #ae8670;
+    font-size: 3rem;
+}
+
+.lista-icones p{
+    text-decoration: none;
+    color: #ae8670;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -62,7 +184,3 @@ body {
         font-size: 2rem;
     }
 }
-
-
-
-
